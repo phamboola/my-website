@@ -1,0 +1,426 @@
+/*** 
+website style
+***/
+
+/* typography sizes */ 
+h1{font-size:5rem; line-height:5rem;font-family:'Bayon';font-weight:600;}
+h2{font-size:1.75rem; line-height:2.25rem;font-family:'Inter';font-weight:600;}
+h3{font-size:1.5rem; line-height:2rem;font-family:'Bayon';font-weight:600;}
+h4{font-size:1.2rem; line-height:1.5rem;font-family:'Bayon';font-weight:600;}
+p{font-size:.8rem; line-height:1.2rem;font-family:'Inter';font-weight:500;}
+
+/* color */ 
+:root {
+    --white-100: #f2f2f2;
+    --black-900: #1B1B1E;
+  }
+
+/* spacers */ 
+.spacer-s {
+    height: 8px; /* Adjust the height to create the desired space */
+    width: 100%; /* Set the width to 100% to span the full width of the container */
+    background-color: transparent; /* You can set a background color if desired */
+}
+.spacer-m {
+    height: 24px; /* Adjust the height to create the desired space */
+    width: 100%; /* Set the width to 100% to span the full width of the container */
+    background-color: transparent; /* You can set a background color if desired */
+}
+.spacer-l {
+    height: 48px; /* Adjust the height to create the desired space */
+    width: 100%; /* Set the width to 100% to span the full width of the container */
+    background-color: transparent; /* You can set a background color if desired */
+}
+.spacer-xl {
+    height: 64px; /* Adjust the height to create the desired space */
+    width: 100%; /* Set the width to 100% to span the full width of the container */
+    background-color: transparent; /* You can set a background color if desired */
+}
+
+/* buttons */ 
+
+button.send_mail{
+background-color: var(--black-900);
+border-radius: 1rem;
+padding: 1rem 3rem;
+color: var(--white-100);
+text-decoration: none;
+}
+button.send_mail:hover{
+  transition: transform 0.3s ease-in-out;
+  background-color: #f2f2f2;
+  color: var(--black-900);
+  text-decoration: none;
+  }
+  button.send_mail:visited{
+    transition: transform 0.3s ease-in-out;
+    background-color: #f2f2f2;
+    color: var(--black-900);
+    text-decoration: none;
+    }
+
+
+html, body{
+    margin:0;
+    padding:0;
+    cursor: none;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+  }
+
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    margin: 0;
+    z-index: -1;
+}
+  
+  /* nav bar*/
+  .navbar {
+    z-index: 2;
+    overflow: hidden;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .nav_description{
+    position:relative;
+    float:left;
+  }
+  
+  .tagline {
+    display: inline-flex;
+    width:10rem;
+    padding: .75rem 1rem;
+    font-family: 'inter';
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: left;
+    color: var(--white-100);
+  }
+  
+  .logo {
+    font-family:'Inter';
+    color: var(--white-100);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration:none;
+    padding: .75rem 1rem;
+    gap: 1rem;
+  }
+
+  nav {
+    position: relative;
+    float: right;
+    gap:1rem;
+    margin-right: 4rem;
+    }
+
+  
+  a {
+    cursor:none;
+    text-decoration: none;
+  }
+  .hover-this {
+    transition: transform 0.3s ease-in-out;
+   }
+
+  span {
+    display: inline-block;
+    padding: .75rem 1rem;
+    font-family:'Inter';
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    color: var(--white-100);
+    transition: transform 0.1s linear;
+  }
+
+  .cursor {
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white-100);
+    border-radius: 0;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .circle {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #fff;
+    }
+
+    a.link {
+      cursor: default;
+  }
+
+ a:hover~.cursor{
+    transform: scale(8);
+  }
+
+  .hamburger {
+    display: none;
+    padding: 0.75rem 1rem;
+    color: var(--white-100);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--black-900);
+}
+  
+/*landing section*/
+
+.landing-wrapper {
+z-index: 1;
+position:relative;
+display: grid;
+grid-template-columns: repeat(12, [col-start] 1fr);
+gap: 1rem;
+background-color: var(--black-900);
+width:100%;
+height: 100vh;
+padding: 0 2rem;
+}
+
+.item1 {
+  grid-column: col-start 2 / span 8;
+  grid-row: 2;
+  color: var(--white-100);
+}
+.item2 {
+    grid-column: col-start 2 / span 4;
+    grid-row: 3;
+    color: var(--white-100);
+  }
+
+/* Styles for the About Me section container */
+.about-me {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: var(--white-100);
+  padding: 1rem;
+}
+
+/* Styles for the left column (text) */
+.about-me-content {
+    flex: 1;
+    color: var(--black-900);
+    text-align: left;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    padding: 1rem
+}
+
+/* Styles for the right column (image) */
+.about-me-image {
+    flex: 1;
+    text-align: center;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    padding: 10px;
+}
+
+/* Adjust the styles for the image as needed */
+.about-me-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Style for the gallery dividers */
+#projects {
+  z-index: 1;
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  padding: 1rem;
+  grid-gap: 2rem;
+  background-color: var(--black-900);
+  width:100%;
+  padding: 0 2rem;
+  height: fit-content;
+}
+
+/* Style for the category headings */
+#projects h2 {
+    color: var(--white-100);
+    grid-column: col-start 2 / span 2;
+    grid-row: 1;
+}
+
+/* Style for the image gallery */
+.card1 {
+    grid-column: col-start 2 / span 4;
+    grid-row: 2; 
+}
+.card2 {
+  grid-column: col-start 6 / span 5;
+  grid-row: 3; 
+}
+.card3 {
+  grid-column: col-start 2/ span 3;
+  grid-row: 4; 
+}
+.card4 {
+  grid-column: col-start 2 / span 4;
+  grid-row: row-start 5 / span 2; 
+}
+.card5 {
+grid-column: col-start 6 / span 6;
+grid-row: row-start 6 / span 2;
+}
+.card6 {
+grid-column: col-start 2 / span 5;
+grid-row: 7; 
+}
+
+.container {
+  position:relative;
+}
+
+.container img {
+  width:100%;
+  max-height: 240px;
+  display:inline-block;
+}
+
+.container img:hover ~ .cursor{
+  transform: translate(-50%,-50%) scale(5);
+}
+
+.details{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap:1rem;
+}
+.score {
+  color:var(--white-100);
+  font-family: 'Bayon';
+  font-size: 3rem;
+  text-align: center;
+}
+
+.description{
+
+}
+.description>h3, .description>p{
+  color: var(--white-100);
+  margin: 0.3rem 1rem;
+}
+
+/* Style for the gallery images */
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* styles for contact */ 
+#contact {
+  background-color: var(--white-100);
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+}
+
+.contact_intro{
+  grid-column: col-start 2 / span 6;
+  grid-row: 1;  
+  display: flexbox;
+}
+.contact_wrapper{
+  grid-column: col-start 6 / span 6;
+  grid-row: 2;
+  display:flex;
+  flex-direction: row;
+}
+
+.contact_details{
+  display:flex;
+  flex-direction: column;
+}
+
+.rate{
+}
+
+
+
+/* breakpoints*/ 
+
+@media only screen and (max-width: 768px){
+
+    h1{font-size:4.5rem; line-height:5rem;font-family:'Bayon';font-weight:600;}
+    h2{font-size:1.25rem; line-height:1.5rem;font-family:'Inter';font-weight:600;}
+    h3{font-size:1.25rem; line-height:1.75rem;font-family:'Inter';font-weight:600;}
+    p{font-size:1rem; line-height:1.5rem;font-family:'Inter';font-weight:500;}
+
+
+        .wrapper {
+            grid-template-columns: repeat(2, [col-start] 1fr);
+            gap: 1rem;
+            }
+        .item1 {
+            grid-column: col-start 1 / span 1;
+            grid-row: 2;
+            display: flex;
+            align-items: flex-end;
+            }
+         .item2 {
+            grid-column: col-start 1 / span 2;
+            grid-row: 3;
+        }
+    
+        .navbar.active {
+            left: 0;
+        }
+
+        nav {
+            display: none;
+          }
+        .tagline {
+            display: none;
+        }
+    
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            color: var(--white-100);
+        }
+        .about-me {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            padding: 1rem
+        }
+
+      .gallery-divider{
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem;
+      }
+    
+    }
