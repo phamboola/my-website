@@ -1,6 +1,6 @@
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
-const link = document.querySelectorAll('nav > .hover-this');
+const link = document.querySelectorAll('nav > .hover-this','#projection > .description');
 
 const cursor = document.querySelector(".cursor");
 
