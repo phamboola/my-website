@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, inital-scale=1">
   <title>Krys Pham Creative</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
+  <link rel="stylesheet" type="text/css" href="/styles.css"/>
   <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
@@ -12,43 +12,47 @@
 </head>
 <body>
   <!-- navbar -->
-  <div class ="navbar" id="darkmode">
+  <div class ="navbar">
     <div class ="nav_description">
     <a href="#" class="hover-this"><span>Krys Pham Creative</span></a> 
     <div class="tagline"> Art Direction & 
       Interactive User Experience Designer</div>
     </div>
     <nav>
-      <a href="index.html" class="hover-this"><span>Projects</span></a>
-      <a href="contact.html" class="hover-this"> <span>Contact</span></a>
+      <a href="/index.html" class="hover-this"><span>Projects</span></a>
+      <a href="/contact.html" class="hover-this"> <span>Contact</span></a>
     </nav>
   </div>
   <div class="spacer-xl"></div>
   <div class="container_folio">
-    <h1>Volvo Studio Tokyo Explorer</h1>
+    <h2>Volvo Studio <br>Tokyo Explorer</h2>
     <div class="row" id="row-1">
       <div class="col">
         <div class="img-container right">
-          <img src="/img/_volvo/vst_concept_01.png" alt="" />
-          <p>Volvo Studio started out as xxxx/p>
+          <img src="" alt="" />
+          <h3>We were approached with a task of inventing an AR experience that could showcase the latest features of Volvo’s new line of electric cars in a creative and playful way to appeal Volvo as a brand towards Japanese Millenials and Gen-Z. The experience would showcase upon the reopening of the new Volvo Tokyo flagship showroom in Aoyama Tokyo.</h3>
         </div>
       </div>
-      <div class="col"></div>
+      <div class="col" id="col-3x">
+        <div class="folio-copy-container">
+        <h2>The problem?<br>Young people just aren’t interested in buying a car.</h2>
+        </div>
+      </div>
     </div>
     <div class="row" id="row-2">
       <div class="col"></div>
       <div class="col">
         <div class="img-container left">
-          <img src="/img/_volvo/vst_photo_phone_01.png" alt="" />
-          <p>Futuristic control relic</p>
+          <img src="/img/index_volvo.png" alt="" />
         </div>
       </div>
     </div>
     <div class="row" id="row-3">
       <div class="col">
         <div class="img-container right">
-          <img src="./images/img-3.jpg" alt="" />
-          <p>Neo-Tokyo crimson glow</p>
+          <img src="/img/_volvo/Screen Shot 2023-04-04 at 6.42.23 pm.png" alt="" />
+          <h3>Concepting the visuals <br>for the northern lights</h3>
+          <p>We gathered moodboards of any relevant visualisations that would look beautiful in the studio space - we particularly looked at procedural waveform art. One of our concepts took the form of the Northern lights as inspiration for the AR space and experimented with artistic visualisations similar to nordic art, soundwaves and chalk drawings. We knew from the broad consensus amongst younger demographics a desire to explore and appreciate culture so we set our sights on bringing the sights you could only see in Sweden, down to the Volvo Tokyo Studio</p>
         </div>
       </div>
       <div class="col"></div>
@@ -57,7 +61,7 @@
       <div class="col"></div>
       <div class="col">
         <div class="img-container left">
-          <img src="./images/img-4.jpg" alt="" />
+          <img src="/img/_volvo/vst_concept_northernlights_01.png" alt="" />
           <p>Galactic ocean abyss</p>
         </div>
       </div>
@@ -65,7 +69,7 @@
     <div class="row" id="row-5">
       <div class="col">
         <div class="img-container right">
-          <img src="./images/img-5.jpg" alt="" />
+          <img src="/img/_volvo/volvo_concept_northernlights_02.png" alt="" />
           <p>Hued cosmic dust</p>
         </div>
       </div>
@@ -75,7 +79,7 @@
       <div class="col"></div>
       <div class="col">
         <div class="img-container left">
-          <img src="./images/img-6.jpg" alt="" />
+          <img src="/img/_volvo/vst_component_cards.png" alt="" />
           <p>Silent sentinel</p>
         </div>
       </div>
@@ -166,8 +170,8 @@
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
-<script src ="js/cursor.js"></script>
-<script src ="js/cursor_hover.js"></script>
+<script src ="/js/cursor.js"></script>
+<script src ="/js/cursor_hover.js"></script>
 <script type="module" src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -225,7 +229,7 @@
       });
     });
 
-    gsap.utils.toArray(".img-container p").forEach((text) => {
+    gsap.utils.toArray(".img-container p, .img-container h3").forEach((text) => {
       gsap.from(text, {
         opacity: 0,
         y: 20,
