@@ -38,8 +38,31 @@ p{font-size:.8rem; line-height:1.2rem;font-family:'Inter';font-weight:500;}
     background-color: transparent; /* You can set a background color if desired */
 }
 
-/* buttons */ 
+  /* cursor*/ 
+  
+  .cursor {
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white-100);
+    border-radius: 0;
+    mix-blend-mode: difference;
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
 
+  .circle {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    background-color: #fff;
+    }
+
+/* buttons */ 
 button.send_mail{
 font-family: "Heebo";
 font-size: 1.25rem;
@@ -53,27 +76,41 @@ overflow: hidden;
 width: fit-content;
 margin-top:1rem;
 }
+
 button.send_mail:hover{
   transition: all transform 0.3s ease-in-out;
   background-color: var(--black-900);
   color: var(--white-100);
   text-decoration: none;
   }
-  button.send_mail:visited{
+
+button.send_mail:visited{
     transition: transform 0.3s ease-in-out;
     background-color: #f2f2f2;
     color: var(--black-900);
     text-decoration: none;
     }
 
+/* defaults */ 
+
+* {
+  padding: 0;
+}
 
 html, body{
-    margin:0;
-    padding:0;
-    cursor: none;
-    box-sizing:border-box;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: none;
+  scroll-behavior: smooth;
+  background-color: var(--white-100);
+ }
+
+ img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
   
   /* nav bar*/
@@ -83,7 +120,6 @@ html, body{
     margin: 0 auto;
     position: sticky;
     width: 100%;
-    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     background-color: var(--black-900);
@@ -125,15 +161,38 @@ html, body{
     margin-right: 4rem;
     }
 
-  
   a {
     cursor:none;
     text-decoration: none;
+    color: var(--white-100);
   }
+
+  a:hover {
+    transform: rotate(50deg) translate(0px, -25px);
+    transition: all 0.3s ease-in-out;
+    color: var(--black-900);
+  }
+  
+  a.description{
+    color:var(--white-100);
+  }
+
+  a:hover +.description p{
+    display: block;
+  }
+  
+  a:hover ~ .cursor{
+    transform: scale(8);
+  }
+
+  a.link {
+    cursor: default;
+}
+  
   .hover-this {
     transition: transform 0.3s ease-in-out;
    }
-
+ 
   span {
     display: inline-block;
     padding: .75rem 1rem;
@@ -142,37 +201,7 @@ html, body{
     line-height: 1.5rem;
     font-weight: 400;
     color: var(--white-100);
-    transition: transform 0.1s linear;
-  }
-
-  .cursor {
-    z-index: 9999;
-    display: block;
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background-color: var(--white-100);
-    border-radius: 0;
-    mix-blend-mode: difference;
-    transition: transform 0.3s ease;
-    pointer-events: none;
-  }
-
-  .circle {
-    position: absolute;
-    display: block;
-    width: 24px;
-    height: 24px;
-    border-radius: 20px;
-    background-color: #fff;
-    }
-
-    a.link {
-      cursor: default;
-  }
-
- hover-this:hover ~ .cursor{
-    transform: scale(8);
+    transition: transform 0.1s ease;
   }
 
   .hamburger {
@@ -192,11 +221,11 @@ html, body{
 }
   
 /*landing section*/
-
 #folio_overflow {
   position: absolute;
-  width: 100vh;
+  grid-template-columns: repeat(12, [col-start] 1fr);
   height: 100vw;
+  width: 100vh;
   z-index: 1;
   -webkit-transform: rotate(-90deg) translateX(-100%) translateZ(0);
   transform: rotate(-90deg) translateX(-100%) translateZ(0);
@@ -204,7 +233,6 @@ html, body{
   transform-origin: 0 0;
   background-color: var(--black-900);
   overflow-x: scroll;
-  padding: 10rem 0rem 0rem 0rem;
 }  
 
 #projection {
@@ -212,15 +240,6 @@ html, body{
   flex-direction: column;
   justify-content: space-around;
   padding-left: 4rem;
-}
-
-a:hover {
-  transform: rotate(50deg) translate(0px, -25px);
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover~.cursor{
-  transform: scale(16);
 }
 
 .hover-reveal{
@@ -280,12 +299,7 @@ a:hover ~ .hover-reveal{
   text-fill-color: transparent;
 }
 
-
-a:hover +.description p{
-  display: block;
-}
-
-/* Styles for the About Me section container */
+/* Styles for the About Me */
 #about-me {
   z-index: 1;
   width: 100%;
@@ -298,7 +312,6 @@ a:hover +.description p{
   overflow: hidden;
 }
 
-/* Styles for the left column (text) */
 .about-me-copy {
   text-align: left;
   font-weight: 400;
@@ -337,12 +350,6 @@ a:hover +.description p{
   flex-direction: row;
   align-content: center;
   gap:1rem;
-}
-
-/* Style for the gallery images */
-.image-gallery img {
-    max-width: 100%;
-    height: auto;
 }
 
 /* styles for contact */ 
@@ -384,8 +391,102 @@ a:hover +.description p{
   margin:0;
 }
 
+/* folio templates */
 
+.container_folio {
+  z-index: 0;
+  padding: 1rem;
+  height: 100%;
+}
 
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.col {
+  height: 100%;
+}
+
+.img-container {
+  width: fit-content;
+  height: 100%;
+}
+
+.img-container.left {
+  text-align: right;
+}
+
+.img-container p {
+  position: relative;
+  padding: 5px 0;
+  color: var(--color-text);
+  opacity: 1;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#row-1 {
+  height: 200px;
+}
+
+#row-2 {
+  height: 500px;
+}
+
+#row-3 {
+  height: 150px;
+}
+
+#row-4 {
+  height: 400px;
+}
+
+#row-5 {
+  height: 700px;
+}
+
+#row-6 {
+  height: 300px;
+}
+
+#row-7 {
+  height: 200px;
+}
+
+#row-8 {
+  height: 600px;
+}
+
+#row-9 {
+  height: 300px;
+}
+
+#row-10 {
+  height: 500px;
+}
+
+.col:nth-child(1) {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.col:nth-child(2) {
+  flex: 5;
+}
+
+.img-container.right img {
+  clip-path: polygon(100% 0, 100% 0, 100% 0, 100% 0);
+}
+
+.img-container.left img {
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+}
+
+.whitespace {
+  width: 100%;
+  height: 300px;
+}
 
 /* breakpoints*/ 
 
