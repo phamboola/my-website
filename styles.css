@@ -4,17 +4,18 @@ website style
 
 /* typography sizes */ 
 h1{font-size:5rem; line-height:5rem;font-family:'Bayon';font-weight:600;}
-h2{font-size:1.75rem; line-height:2.25rem;font-family:'Inter';font-weight:600;}
+h2{font-size:1.75rem; line-height:2.25rem;font-family:'Heebo';font-weight:600;}
 h3{font-size:1.5rem; line-height:2rem;font-family:'Heebo';font-weight:600;}
-h4{font-size:1.2rem; line-height:1.5rem;font-family:'Bayon';font-weight:600;}
-p{font-size:.8rem; line-height:1.2rem;font-family:'Inter';font-weight:500;}
+h4{font-size:1.2rem; line-height:1.5rem;font-family:'Bayon';font-weight:600;letter-spacing:0.5px;}
+p{font-size:1rem; line-height:1.5rem;font-family:'Heebo';font-weight:500;}
 
 /* color */ 
 :root {
-    --white-100: #f2f2f2;
-    --black-900: #1B1B1E;
-    --color-text:var(--black-900);
-    font-size: 15px;
+    --background: #f2f2f2;
+    --color-text: #1B1B1E;
+    --color-link:#787878;
+    --cursor-col: #ffff22;
+    font-size: 14px;
   }
 
 /* spacers */ 
@@ -47,7 +48,7 @@ p{font-size:.8rem; line-height:1.2rem;font-family:'Inter';font-weight:500;}
     position: fixed;
     width: 20px;
     height: 20px;
-    background-color: var(--white-100);
+    background-color: var(--cursor-col);
     border-radius: 0;
     mix-blend-mode: difference;
     transition: transform 0.3s ease;
@@ -60,7 +61,7 @@ p{font-size:.8rem; line-height:1.2rem;font-family:'Inter';font-weight:500;}
     width: 24px;
     height: 24px;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: var(--cursor-col);
     }
 
 /* buttons */ 
@@ -68,10 +69,10 @@ button.send_mail{
 font-family: "Heebo";
 font-size: 1.25rem;
 position: relative;
-border: 0.25rem solid var(--black-900);
+border: 0.25rem solid var(--color-text);
 border-radius: 1rem;
 padding: 1rem 2rem;
-color: var(--black-900);
+color: var(--color-text);
 text-transform: uppercase;
 overflow: hidden;
 width: fit-content;
@@ -80,15 +81,15 @@ margin-top:1rem;
 
 button.send_mail:hover{
   transition: all transform 0.3s ease-in-out;
-  background-color: var(--black-900);
-  color: var(--white-100);
+  background-color: var(--color-text);
+  color: var(--background);
   text-decoration: none;
   }
 
 button.send_mail:visited{
     transition: transform 0.3s ease-in-out;
     background-color: #f2f2f2;
-    color: var(--black-900);
+    color: var(--color-text);
     text-decoration: none;
     }
 
@@ -104,7 +105,7 @@ html, body{
   height: 100%;
   cursor: none;
   scroll-behavior: smooth;
-  background-color: var(--white-);
+  background-color: var(--background);
  }
 
  img {
@@ -123,7 +124,7 @@ html, body{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--white-100);
+    background-color: var(--background);
   }
   
   .nav_description{
@@ -140,12 +141,12 @@ html, body{
     font-size: 0.9rem;
     line-height: 1.2rem;
     text-align: left;
-    color: var(--black-900);
+    color: var(--color-text);
   }
   
   .logo {
     font-family:'Inter';
-    color: var(--black-900);
+    color: var(--color-text);
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
@@ -165,17 +166,17 @@ html, body{
   a {
     cursor:none;
     text-decoration: none;
-    color: var(--black-900);
+    color: var(--color-link);
   }
 
   a:hover {
     transform: rotate(50deg) translate(0px, -25px);
     transition: all 0.3s ease-in-out;
-    color: var(--white-100);
+    color: var(--background);
   }
   
   a.description{
-    color:var(--black-900);
+    color:var(--color-text);
   }
 
   a:hover +.description p{
@@ -201,14 +202,19 @@ html, body{
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 400;
-    color: var(--black-900);
+    color: var(--color-link);
     transition: transform 0.1s ease;
   }
+
+  span:hover {
+    color:var(--color-text);
+  }
+
 
   .hamburger {
     display: none;
     padding: 0.75rem 1rem;
-    color: var(--black-900);
+    color: var(--color-text);
 }
 
 .bar {
@@ -218,7 +224,7 @@ html, body{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: var(--black-900);
+    background-color: var(--color-text);
 }
   
 /*landing section*/
@@ -232,11 +238,11 @@ html, body{
   transform: rotate(-90deg) translateX(-100%) translateZ(0);
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  background-color: var(--white-100);
+  background-color: var(--background);
   overflow-x: scroll;
 }  
 
-#projection {
+#project {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -273,7 +279,7 @@ a:hover ~ .hover-reveal{
 
 .description{
   z-index: 2;
-  color: var(--black-900);
+  color: var(--color-text);
   transform: rotate(50deg);
 }
 .description>h3{
@@ -307,7 +313,7 @@ a:hover ~ .hover-reveal{
   height:75vh;
   display: grid;
   align-items: flex-end;
-  background-color: var(--white-100);
+  background-color: var(--background);
   padding: 1rem;
   grid-template-columns: repeat(12, [col-start] 1fr);
   overflow: hidden;
@@ -317,13 +323,13 @@ a:hover ~ .hover-reveal{
   text-align: left;
   font-weight: 400;
   /* padding: 1rem; */
-  color: var(--black-900);
+  color: var(--color-text);
   grid-column: col-start 2 / span 6;
   grid-row: 2;
 }
 
 .about-me-title{
-  color: var(--black-900);
+  color: var(--color-text);
   grid-column: col-start 7 / span 5;
   grid-row:2;
   font-family: 'Bayon';
@@ -355,7 +361,7 @@ a:hover ~ .hover-reveal{
 
 /* styles for contact */ 
 #contact {
-  background-color: var(--white-100);
+  background-color: var(--background);
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
   padding: 1rem;
@@ -431,11 +437,6 @@ a:hover ~ .hover-reveal{
   height: 100%;
 }
 
-.img-container.blank{
-  width: 100%;
-  height: 100%;
-}
-
 .img-container.left {
   text-align: right;
 }
@@ -450,8 +451,13 @@ a:hover ~ .hover-reveal{
 
 }
 
+.img-container video {
+  width: fit-content;
+  height: 100%;
+}
+
 #row-1 {
-  height: 200px;
+  height: 300px;
 }
 
 #row-2 {
@@ -459,7 +465,7 @@ a:hover ~ .hover-reveal{
 }
 
 #row-3 {
-  height: 150px;
+  height: 250px;
 }
 
 #row-4 {
@@ -467,15 +473,15 @@ a:hover ~ .hover-reveal{
 }
 
 #row-5 {
-  height: 700px;
-}
-
-#row-6 {
   height: 300px;
 }
 
+#row-6 {
+  height: 400px;
+}
+
 #row-7 {
-  height: 200px;
+  height: 250px;
 }
 
 #row-8 {
@@ -532,7 +538,7 @@ a:hover ~ .hover-reveal{
       padding: 24rem 4rem 0rem 0rem;
     }  
     
-    #projection {
+    #project {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -548,7 +554,7 @@ a:hover ~ .hover-reveal{
       display: none;
     }
 
-    .tagline{
+    .tagline {
       font-size: 4rem;
       line-height: 4.5rem;
     }
@@ -599,9 +605,9 @@ a:hover ~ .hover-reveal{
 
     button.send_mail{
       font-size: 1.75rem;
-      background-color: var(--black-900);
-      border: 0.25rem solid var(--black-900);
-      color: var(--white-100);
+      background-color: var(--color-text);
+      border: 0.25rem solid var(--color-text);
+      color: var(--background);
       padding: 1rem 3rem;
       height: 96px;
       width: auto;
