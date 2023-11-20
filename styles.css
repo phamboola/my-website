@@ -131,8 +131,8 @@ html, body{
   width: 100%;
   height: 100%;
   cursor: none;
-  scroll-behavior: smooth;
   background-color: var(--background);
+  scroll-behavior: smooth;
   overflow: hidden;
  }
 
@@ -290,11 +290,11 @@ html, body{
 }
 
 #AS{
-  transform: translate(250px, -275px) rotate(90deg) scale(1.2);
+  transform: translate(250px, 600px) rotate(90deg) scale(1.2);
 }
 
 #SXSW{
-  transform: translate(200px,80px) rotate(90deg) scale(1.8);
+  transform: translate(200px,240px) rotate(90deg) scale(1.8);
 }
 
 #OSI{
@@ -315,17 +315,13 @@ html, body{
   
 }
 
-a:hover ~ .hover-reveal{
+a.description:hover ~ .hover-reveal{
   opacity: 100%;
-}
-
-.description:hover ~ .marquee{
-  opacity: 1;
 }
 
 .container {
     position: relative;
-    display: inline-block;
+    display: flex;
     width: 100%;
     align-items: center;
 }
@@ -508,7 +504,7 @@ p#header {
   font-size: 6.4rem;
   line-height: 85%;
   margin-bottom: 4rem;
-  
+  color: #f1f1f1;
   
 }
 
@@ -522,7 +518,7 @@ p#header {
 .slider-wrapper {
   position: absolute;
   top: 0;
-  width: 8000px;
+  width: 5000px;
   padding: 0 600px;
   height: 100%;
   display: flex;
@@ -532,9 +528,9 @@ p#header {
 }
 
 .slide {
-  width: 100%;
+  width: 600px;
   height: 100%;
-  display: inline-block;
+  display: block;
   margin: 0;
 }
 
@@ -547,9 +543,6 @@ p#header {
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: 400;
-
-
-
 }
 
 .container_folio {
@@ -677,43 +670,65 @@ p#header {
 
     h1{font-size:4.5rem; line-height:5rem;font-family:'Bayon';font-weight:600;}
     h2{font-size:2.2rem; line-height:1.5rem;font-family:'Inter';font-weight:600;}
-    h3{font-size:1.75rem; line-height:2.5rem;font-family:'Heebo';font-weight:600;}
+    h3{font-size:1.75rem; line-height:2.5rem;font-family:'Heebo';font-weight:800;}
     h4{font-size:1.75rem; line-height:1.5rem;font-family:'Bayon';font-weight:600;}
-    p{font-size:1.5rem; line-height:2rem;font-family:'Inter';font-weight:500;}
+    p{font-size:1.5rem; line-height:2rem;font-family:'Inter';font-weight:400;}
     
+
+    /* nav */
+    .navbar{
+      display: flex;
+      position: relative;
+      padding-bottom: 2rem;
+    }
+
+
+    .nav_description{
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav{
+      display: flex;
+      flex-direction: column;
+      margin-right: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    span {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    /* homepage content */
 
     #folio_overflow {
       -webkit-transform: rotate(0) translateX(0) translateZ(0);
       transform: rotate(-) translateX(0) translateZ(0);
-      overflow-x: hidden;
-      height:fit-content;
-      padding: 24rem 4rem 0rem 0rem;
+      overflow-x: none;
+      height: 100vh;
+      padding: 2rem 4rem 0rem 0rem;
     }  
     
     #project {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      padding-left: 4rem;
+      padding-left: 1rem;
     }
 
-
-    .navbar{
-      display: block;
+    .score {
+      transform: rotate(0deg);
+      top: -36px;
+      left: 302px;
     }
 
-    nav {
-      display: none;
-    }
-
-    .tagline {
-      font-size: 4rem;
-      line-height: 4.5rem;
-    }
-
-    span {
-      font-size: 4rem;
-      line-height: 4.5rem;
+    .marquee p {
+      font-size: 1.2rem;
     }
 
      #about-me {
@@ -760,6 +775,11 @@ p#header {
       padding: 1rem 3rem;
       height: 96px;
       width: auto;
-      }
-    
+    }
+
+    .slider-wrapper {
+      position: relative;
+      
+    }
+
     }
