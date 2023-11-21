@@ -289,7 +289,7 @@ html, body{
 }
 
 #VST{
-  transform: translate(80px,600px) rotate(90deg) scale(1.0);
+  transform: translate(80px,800px) rotate(90deg) scale(1.0);
 }
 
 #AS{
@@ -301,6 +301,26 @@ html, body{
 }
 
 #OSI{
+  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+}
+
+#OPTIFAST{
+  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+}
+
+#BP{
+  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+}
+
+#ELLIC{
+  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+}
+
+#ELLA{
+  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+}
+
+#CARLTON{
   transform: translate(0px,250px) rotate(90deg) scale(1.1);
 }
 
