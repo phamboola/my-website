@@ -700,13 +700,13 @@ p#header {
     }
 
     button.send_mail{
-      font-size: 1.5rem;
-      line-height: 2.25rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
       background-color: var(--color-text);
       border: 0.25rem solid var(--color-text);
       color: var(--background);
-      padding: 1rem 3rem;
-      height: 96px;
+      padding: 1rem 2rem;
+      height: auto;
       width: auto;
       margin-bottom: var(--size-lg);
       
