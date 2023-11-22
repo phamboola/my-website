@@ -255,6 +255,7 @@ html, body{
 #folio_overflow {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   width:86vh;
   height:100vw;
   z-index: 1;
@@ -263,7 +264,7 @@ html, body{
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
   background-color: var(--background);
-  overflow-x: scroll;
+
 }  
 
 #project {
@@ -297,16 +298,21 @@ html, body{
 }
 
 #SXSW{
-  transform: translate(200px,290px) rotate(90deg) scale(1.8);
+  transform: translate(200px,270px) rotate(90deg) scale(1.8);
+  z-index: 1;
+  mix-blend-mode: multiply;
 }
 
 #OSI{
-  transform: translate(0px,250px) rotate(90deg) scale(1.1);
+  transform: translate(250px,150px) rotate(90deg) scale(.9);
+  z-index: 1;
+  mix-blend-mode: normal;
 }
 
 #OPTIFAST{
   transform: translate(140px,-280px) rotate(90deg) scale(1.1);
-  z-index: 5;
+  z-index: 1;
+  mix-blend-mode: normal;
 }
 
 #BP{
@@ -331,12 +337,9 @@ html, body{
 }
 
 #IV{
-  transform: translate(-80px, -600px) rotate(90deg) scale(1.6);
+  transform: translate(140px, -420px) rotate(90deg) scale(1.1);
   mix-blend-mode:normal;
   z-index: 1;
-  left: 0;
-  top: 0;
-  position: absolute;
 }
 
 .hover-reveal img{
