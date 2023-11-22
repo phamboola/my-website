@@ -77,22 +77,19 @@ p{font-size:1rem; line-height:1.5rem;font-family:'Heebo',Arial, Helvetica, sans-
   
   .cursor {
     z-index: 9999;
-    display: block;
     position: fixed;
-    width: 20px;
-    height: 20px;
+    width: auto;
+    height: auto;
     background-color: var(--cursor-col);
     border-radius: 0;
     mix-blend-mode: difference;
-    transition: transform 0.3s ease;
     pointer-events: none;
   }
 
   .circle {
-    position: absolute;
-    display: block;
-    width: 24px;
-    height: 24px;
+    position: fixed;
+    width: 16px;
+    height: 16px;
     border-radius: 20px;
     background-color: var(--cursor-col);
     }
@@ -238,7 +235,6 @@ html, body{
     color:var(--color-text);
   }
 
-
   .hamburger {
     display: none;
     padding: 0.75rem 1rem;
@@ -259,7 +255,7 @@ html, body{
 #folio_overflow {
   display: flex;
   flex-direction: column;
-  width:100vh;
+  width:86vh;
   height:100vw;
   z-index: 1;
   -webkit-transform: rotate(-90deg) translateX(-100%) translateZ(0);
@@ -275,7 +271,7 @@ html, body{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem 2rem;
+  padding: 0rem 1rem;
   vertical-align: baseline;
 }
 
@@ -327,7 +323,7 @@ html, body{
 }
 
 #CARLTON{
-  transform: translate(120px,-320px) rotate(90deg) scale(2);
+  transform: translate(95px,-320px) rotate(90deg) scale(1.85);
   position: absolute;
   mix-blend-mode:normal;
   z-index: 1;
@@ -372,6 +368,7 @@ html, body{
 
 .project_title h3 {
   font-size: 3.2rem;
+  line-height: 125%;
   font-weight: 800;
   margin: 1rem 0rem;
 }
@@ -554,7 +551,7 @@ h2.rate{
   height: max-content;
   display: flex;
   align-items: flex-start;
-  transform: rotate(-90deg) translate(-100%, 0);
+  transform: rotate(-90deg) translate(-86%, 0);
   transform-origin: left top;
   font-family: "Heebo",Arial, Helvetica, sans-serif;
   padding: 1rem 0rem;
