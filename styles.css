@@ -286,49 +286,58 @@ html, body{
 }
 
 #VST{
+  -webkit-transform:translate(80px,800px) rotate(90deg) scale(1.0);
   transform: translate(80px,800px) rotate(90deg) scale(1.0);
   mix-blend-mode:normal;
   z-index: 1;
 }
 
 #AS{
+  -webkit-transform:translate(250px, 670px) rotate(90deg) scale(1.2);
   transform: translate(250px, 670px) rotate(90deg) scale(1.2);
   mix-blend-mode:normal;
   z-index: 1;
 }
 
 #SXSW{
+  -webkit-transform:translate(200px,270px) rotate(90deg) scale(1.8);
   transform: translate(200px,270px) rotate(90deg) scale(1.8);
   z-index: 1;
   mix-blend-mode: multiply;
 }
 
 #OSI{
+  -webkit-transform:translate(250px,150px) rotate(90deg) scale(.9);
   transform: translate(250px,150px) rotate(90deg) scale(.9);
   z-index: 1;
   mix-blend-mode: normal;
 }
 
 #OPTIFAST{
+  -webkit-transform:translate(140px,-280px) rotate(90deg) scale(1.1);
   transform: translate(140px,-280px) rotate(90deg) scale(1.1);
   z-index: 1;
   mix-blend-mode: normal;
 }
 
 #BP{
+  -webkit-transform:translate(0px,250px) rotate(90deg) scale(1.1);
   transform: translate(0px,250px) rotate(90deg) scale(1.1);
 }
 
 #ELLIC{
+  -webkit-transform:translate(220px,0px) rotate(90deg) scale(1.1);
   transform: translate(220px,0px) rotate(90deg) scale(1.1);
   mix-blend-mode:normal;
 }
 
 #ELLA{
+  -webkit-transform:translate(0px,250px) rotate(90deg) scale(1.1);
   transform: translate(0px,250px) rotate(90deg) scale(1.1);
 }
 
 #CARLTON{
+  -webkit-transform:translate(95px,-320px) rotate(90deg) scale(1.85);
   transform: translate(95px,-320px) rotate(90deg) scale(1.85);
   position: absolute;
   mix-blend-mode:normal;
@@ -337,6 +346,7 @@ html, body{
 }
 
 #IV{
+  -webkit-transform:translate(140px, -420px) rotate(90deg) scale(1.1);
   transform: translate(140px, -420px) rotate(90deg) scale(1.1);
   mix-blend-mode:normal;
   z-index: 1;
