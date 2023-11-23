@@ -110,14 +110,12 @@ width: fit-content;
 }
 
 button.send_mail:hover{
-  transition: all transform 0.6s linear;
   background-color: #5b5b5b;
   color: var(--background);
   text-decoration: none;
   }
 
 button.send_mail:visited{
-    transition: transform 0.3s ease-in-out;
     background-color: #f2f2f2;
     color: var(--color-text);
     text-decoration: none;
@@ -644,6 +642,18 @@ p#header {
     .circle {
       display: none;
     }
+
+    button.send_mail{
+      line-height: 200%;
+      background-color: var(--color-text);
+      border: 0.25rem none var(--color-text);
+      color: var(--background);
+      padding: 1rem 2rem;
+      height: auto;
+      width: auto;
+      margin-bottom: 8em;
+      
+    }
     
     /* nav */
     .navbar{
@@ -674,14 +684,17 @@ p#header {
       line-height: 150%;
     }
 
+
     /* homepage content */
 
     #folio_overflow {
       -webkit-transform: rotate(0) translateX(0) translateZ(0);
       transform: rotate(-) translateX(0) translateZ(0);
-      height: auto;
+      height: 100%;
       width:auto;
       overflow: auto;
+      display: block;
+
     }  
     
     #project {
@@ -692,14 +705,26 @@ p#header {
       height:100px;
     }
 
+    .project_title h1 {
+      width: max-content;
+      font-size:1.953em;
+    }
+
     .score {
       transform: rotate(0deg);
       position:static;
+      font-size: 4.8em;
     }
 
-    .marquee p {
-      font-size: 1em;
-    }
+    .marquee {
+      opacity: 100%;
+     }
+    
+     .marquee p{
+      font-size: 0.8em;
+      animation: none;
+      display: block;
+      }
     
     .gallery-divider{
       display: flex;
@@ -707,17 +732,13 @@ p#header {
       padding: 0rem 2rem;
     }
 
-    button.send_mail{
-      line-height: 200%;
-      background-color: var(--color-text);
-      border: 0.25rem none var(--color-text);
-      color: var(--background);
-      padding: 1rem 2rem;
-      height: auto;
-      width: auto;
-      margin-bottom: 8em;
-      
+    .hover-reveal {
+      display: none;
     }
+
+
+
+    /* project pages */
 
     .sidebar {
       display: none;
@@ -754,9 +775,7 @@ p#header {
       padding: 1em 0em;
     }
 
-    .hover-reveal {
-      display: none;
-    }
+    /* About Me */
 
     #about-me {
       display: flex;
@@ -813,13 +832,5 @@ p#header {
     .rate{
       gap: 0;
     }
-
-    .marquee {
-      opacity: 100%;
-     }
-    
-     .marquee p{
-      animation: none;
-      }
 
     }
