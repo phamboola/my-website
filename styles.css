@@ -285,8 +285,8 @@ html, body{
 }
 
 #VST{
-  -webkit-transform:translate(80px,800px) rotate(90deg) scale(1.0);
-  transform: translate(80px,800px) rotate(90deg) scale(1.0);
+  -webkit-transform:translate(100px,800px) rotate(90deg) scale(1.0);
+  transform: translate(100px,800px) rotate(90deg) scale(1.0);
   mix-blend-mode:normal;
   z-index: 1;
 }
@@ -336,8 +336,8 @@ html, body{
 }
 
 #CARLTON{
-  -webkit-transform:translate(95px,-320px) rotate(90deg) scale(1.85);
-  transform: translate(95px,-320px) rotate(90deg) scale(1.85);
+  -webkit-transform:translate(95px,-320px) rotate(90deg) scale(2);
+  transform: translate(95px,-320px) rotate(90deg) scale(2);
   position: absolute;
   mix-blend-mode:normal;
   z-index: 1;
@@ -345,8 +345,8 @@ html, body{
 }
 
 #IV{
-  -webkit-transform:translate(140px, -420px) rotate(90deg) scale(1.1);
-  transform: translate(140px, -420px) rotate(90deg) scale(1.1);
+  -webkit-transform:translate(140px, -220px) rotate(90deg) scale(2.2);
+  transform: translate(140px, -420px) rotate(90deg) scale(2.2);
   mix-blend-mode:normal;
   z-index: 1;
 }
