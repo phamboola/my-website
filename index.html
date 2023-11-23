@@ -12,7 +12,20 @@
   <link rel="stylesheet" type="text/css" href="styles.css"/>
   <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <script>
+    function disableScriptsOnMobile() {
+      if (window.innerWidth <= 768) {
+        window.disableScripts = true;
+
+        var scripts = document.getElementsByTagName('script');
+        for (var i = 0; i < scripts.length; i++) {
+          scripts[i].remove();
+        }
+      }
+    }
+
+    window.onload = disableScriptsOnMobile;
+  </script>
 </head>
 <body style="overflow:hidden !important">
   <!-- navbar -->

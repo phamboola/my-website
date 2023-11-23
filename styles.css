@@ -719,8 +719,39 @@ p#header {
       
     }
 
+    .sidebar {
+      display: none;
+    }
+
+    .slider {
+      height:auto;
+      overflow: auto;
+    }
+
     .slider-wrapper {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: fit-content;
+      padding: 0;
+      gap:0;
+    }
+
+    .slide {
+      width: auto;
+      padding: 0em 1em 2em 1em;
+    }
+
+
+    .slide img {
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .slide p {
+      font-size: 1em;
+      padding: 1em 0em;
     }
 
     .hover-reveal {
