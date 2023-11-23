@@ -512,6 +512,7 @@ html, body{
   font-family: 'Bayon', Arial, Helvetica, sans-serif;
   font-size: 3.05em;
   line-height: 100%;
+  padding-bottom: var(--size-sm);
 }
 
 .contact_details{
@@ -523,11 +524,11 @@ html, body{
   padding: 0rem 1rem;
 }
 
-.contact_details h3{
+.contact_details h2{
+  font-family: 'Bayon', Arial, Helvetica, sans-serif;
   letter-spacing: 0.01em;
-  padding-top: 1.25em;
-  font-weight: 500;
-  line-height: 150%;
+  padding-top: var(--size-md);
+  line-height: 125%;
 }
 
 .rate-wrapper{
@@ -650,7 +651,7 @@ p#header {
       color: var(--background);
       padding: 1rem 2rem;
       height: auto;
-      width: auto;
+      width: -webkit-fill-available;
       margin-bottom: 8em;
       
     }
@@ -809,10 +810,8 @@ p#header {
       grid-row: 2;
     }
 
-    .contact_details h3{
+    .contact_details h2{
       padding-top: 0em;
-      font-size:2.441em;
-      line-height: 150%;
     }
     
     
