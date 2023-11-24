@@ -2,15 +2,15 @@
 website style
 ***/
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
 
 /* typography sizes */ 
 h1{font-size:2.441em; line-height:150%;font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;font-weight:700; letter-spacing:-0.025em;}
-h2{font-size:1.953em; line-height:150%;font-family:'Heebo',Arial, Helvetica, sans-serif;font-weight:600;letter-spacing:0.025em}
-h3{font-size:1.563em; line-height:100%;font-family:'Heebo',Arial, Helvetica, sans-serif;font-weight:800;letter-spacing:0.025em}
-h4{font-size:1.25em; line-height:150%;font-family:'Heebo',Arial, Helvetica, sans-serif;font-weight:400;}
-p{font-size:1rem; line-height:150%;font-family:'Heebo',Arial, Helvetica, sans-serif;font-weight:400; letter-spacing: 0.01em;}
+h2{font-size:1.953em; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:600;}
+h3{font-size:1.563em; line-height:100%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:800;}
+h4{font-size:1.25em; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:400;}
+p{font-size:1rem; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:400;}
 
 /* color */ 
 :root {
@@ -551,7 +551,7 @@ html, body{
 }
 
 .rate h1 {
-  font-family: 'Heebo',Arial, Helvetica, sans-serif;
+  font-family: 'Inter',Arial, Helvetica, sans-serif;
   letter-spacing: 0em;
   font-weight: 500;
 }
@@ -570,7 +570,7 @@ html, body{
   align-items: flex-start;
   transform: rotate(-90deg) translate(-86%, 0);
   transform-origin: left top;
-  font-family: "Heebo",Arial, Helvetica, sans-serif;
+  font-family: "Inter",Arial, Helvetica, sans-serif;
   padding: 1rem 0rem;
   
 }
@@ -801,7 +801,6 @@ p#header {
 
     .about-me-title {
       padding: var(--size-sm);
-      height: 180px;
     }
 
     .rate-wrapper {
@@ -820,6 +819,7 @@ p#header {
 
     .contact_details h2{
       padding-top: 0em;
+      padding-bottom: var(--size-sm);
     }
     
     
@@ -828,7 +828,7 @@ p#header {
     }
 
     .contact_details p {
-      padding-bottom: var(--size-lg);
+      padding-bottom: var(--size-md);
     }
 
     #contact {
