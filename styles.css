@@ -658,7 +658,7 @@ p#header {
       border: 0.25rem none var(--color-text);
       color: var(--background);
       padding: 1rem 2rem;
-      height: auto;
+      height: 84px;
       width: -webkit-fill-available;
       margin-bottom: 8em;
       
