@@ -586,10 +586,11 @@ html, body{
 }
 
 p#header {
-  font-family: "Heebo",Arial, Helvetica, sans-serif;
-  font-weight: 800;
+  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.025em;
   text-transform: uppercase;
-  font-size: 6.4rem;
+  font-size: 5rem;
   line-height: 85%;
   margin-bottom: 4rem;
   color: #f1f1f1;
