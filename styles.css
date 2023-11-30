@@ -160,7 +160,7 @@ html, body{
   
   .tagline {
     display: inline-flex;
-    width:10em;
+    width:13em;
     padding: .75rem 1rem;
     font-family: 'Inter',Arial, Helvetica, sans-serif;
     font-weight: 400;
