@@ -134,7 +134,10 @@ html, body{
   cursor: none;
   background-color: var(--background);
   scroll-behavior: smooth;
-  overflow: auto;
+  background-image: url(/img/backgound.png);
+  background-size: 128px 256px;
+  overflow:auto;
+
  }
 
  img {
@@ -260,7 +263,6 @@ html, body{
   transform: rotate(-90deg) translateX(-100%) translateZ(0);
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
-  background-color: var(--background);
 
 }  
 
@@ -442,7 +444,6 @@ html, body{
   height:75vh;
   display: grid;
   align-items: flex-end;
-  background-color: var(--background);
   grid-template-columns: repeat(12, [col-start] 1fr);
   overflow: hidden;
 }
