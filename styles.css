@@ -653,6 +653,7 @@ p#header {
     }
 
     button.send_mail{
+      font-size: 1.2em;
       line-height: 200%;
       background-color: var(--color-text);
       border: 0.25rem none var(--color-text);
