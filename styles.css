@@ -470,7 +470,7 @@ html, body{
   font-weight: 700;
   letter-spacing: -0.05em;
   font-size: 6rem;
-  text-align: right;
+  text-align: left;
   align-content: flex-end;
   -webkit-text-stroke: 1px var(--color-sub);
   text-stroke: 1px var(--color-sub);
@@ -505,7 +505,7 @@ html, body{
   padding-bottom: 10rem;
 }
 
-.contact_intro{
+.contact_intro {
   grid-column: col-start 2 / span 5;
   grid-row: 1;  
   display: flex;
