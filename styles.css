@@ -822,6 +822,7 @@ p#header {
     }
 
     .contact_details h2{
+      font-size:48px;
       padding-top: 0em;
       padding-bottom: var(--size-sm);
     }
@@ -832,7 +833,7 @@ p#header {
     }
 
     .contact_details p {
-      font-size:18px;
+      font-size:20px;
       padding-bottom: var(--size-md);
     }
 
