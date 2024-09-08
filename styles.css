@@ -60,7 +60,6 @@ p {
   font-weight: 300;
   color: var(--color-link);
   line-height: 120%;
-  font-size: 1em;
 }
 
   /* cursor*/ 
@@ -175,13 +174,14 @@ a{
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: .5rem;
+  gap: .75rem;
 }
 
 .services {
   padding: 8em 2em;
   display: flex;
   flex-direction: column;
+  gap: 3em;
 }
 
 .services-header {
