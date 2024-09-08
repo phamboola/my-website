@@ -1,155 +1,79 @@
 <!DOCTYPE html>
 <html lang = "en">
-<head>
-  <meta name="description" content="Krys Pham Creative">
-  <meta name="keywords" content="UI/UX Design, Experience Design, Senior Product Designer">
-  <meta charset="utf-8">
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <meta name="theme-color" content="#4a4a4a">
-  <meta name="viewport" content="width=device-width, inital-scale=1">
-  <title>Krys Pham Creative</title>
-  <link rel="stylesheet" type="text/css" href="styles.css"/>
-  <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
-  <link href='https://fonts.googleapis.com/css?family=Bayon' rel='stylesheet'>
-  <script>
-    function disableScriptsOnMobile() {
-      if (window.innerWidth <= 768) {
-        window.disableScripts = true;
-
-        var scripts = document.getElementsByTagName('script');
-        for (var i = 0; i < scripts.length; i++) {
-          scripts[i].remove();
-        }
-      }
-    }
-
-    window.onload = disableScriptsOnMobile;
-  </script>
-</head>
-<body style="overflow:hidden !important">
-  <!-- navbar -->
-  <div class ="navbar">
-    <div class ="nav_description">
-    <div class="tagline">Krys Pham Creative</div>
-    <div class="tagline">Senior product designer with 8 years of crafting exceptional customer experiences</div>
-    </div>
-    <nav>
-      <a href="#projects" class="hover-this"><span>Projects</span></a>
-      <a href="contact.html" class="hover-this"> <span>Contact</span></a>
-    </nav>
-  </div>
- <!-- landing section -->
- <section id="folio_overflow">
-  <div id="project">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Krys Pham Creative">
+    <meta name="keywords" content="UI/UX Design, Experience Design, Senior Product Designer">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#4a4a4a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krys Pham | Product & Creative Design</title>
+    <link rel="stylesheet" href="./styles.css"/>
+  </head>
+  <body>
     <div class="container">
-      <a class="description" href="/pages/vst.html">
-        <div class="project_title"><h1>Volvo</h1></div>
-        <div class="marquee"><p>Experience Designer | Animation, AR Design, Concept Artist</p></div>
-      </a>
-        <div class="hover-reveal" id="VST">
-          <img class="hidden-img" src="img/index_volvo.png" alt="volvo tokyo banner image">
+      <section class="hero">  
+        <h1>Senior Product Design specialist with 8+ years of immersive and delightful customer experiences in fintech, spacial experiences and games. I look at the bigger picture and find ways to get where things could be while building great relationships along the way. Also, making things look and feel amazing ✨ </h1>
+        <p>
+          I've worked across a bunch of agency and enterprise settings. You might've seen my work on your phone with the <a href="https://play.google.com/store/apps/details?id=com.australiansuper.android.australiansuper&hl=en_AU" aria-label="Go to AustralianSuper app store"> AustralianSuper app</a>, at a <a href="https://www.akqa.com/work/volvo-cars/volvo-studio-tokyo-explorer/" aria-label="Go to Volvo Studio Tokyo Explorer case study"> Volvo showroom in Tokyo</a>, in the pacific isle of <a href="https://www.akqa.com/work/millipede/our-special-island/#:~:text=Aimed%20at%205%2D8%20year,bake%20ingredients%20for%20healthy%20meals." aria-label="Go to Our Special Island case study">Tonga helping the community</a>, and at with Bendigo Bank 🤫.  
+        </p>
+      </section>
+      <section class="services">
+        <div class="services-header">
+          <div class="col"></div>
+          <div class="col"><h1>Cool stuff I've done</h1></div>
         </div>
-        <div class="score">01</div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/australiansuper.html">
-        <div class="project_title"><h1>AustralianSuper</h1></div>
-        <div class="marquee"><p>Product Designer | Animation, UI Design, UX Design</p></div>
-      </a>
-      <div class="hover-reveal" id="AS">
-        <img class="hidden-img" src="img/_as/austaliansuper_home_phone.png" alt="australiansuper mobile app screens">
-      </div>
-      <div class="score">02</div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/sxswwpp.html" alt="3D artwork of planets and stars">
-        <div class="project_title"><h1>SXSW Sydney</h1></div>
-        <div class="marquee"><p>Lead Visual Artist | 3D Design, UI Design, Graphic Design</p></div>
-      </a>
-      <div class="score">03</div>
-        <div class="hover-reveal" id="SXSW">
-          <img class="hidden-img" src="img/_mr/mr_img_nft.png" alt="sxsw x wpp house merging realities experience">
+        <div class="service">
+          <div class="service-info">
+            <div class="wrapper">
+              <h2>Super in your hands</h2>
+              <p class="quote">4x member visits in the app a month vs 2x a year on the portal</p>
+            </div>
+            <p class="summary">
+              From checking it monthly on the web, into your hands everyday.
+            </p>
+          </div>
+          <div class="service-img">
+            <div class="img">
+              <img src="./assets/index_as.png" alt="AustraliaSuper app screens" />
+            </div>
+          </div>
         </div>
+        <div class="service">
+          <div class="service-info">
+            <div class="wrapper">
+              <h2>Bringing Sweden to Japan</h2>
+              <p class="quote">Within the first six months, visitor numbers and test drives doubled.</p>
+            </div>
+            <p class="summary">
+              Crafting a cultural experience to connect Volvo with a younger generation in the streets of Tokyo.
+            </p>
+          </div>
+          <div class="service-img">
+            <div class="img">
+              <img src="./assets/index_volvo.png" alt="Volvo Showroom in Aoyama" />
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-info">
+            <div class="wrapper">
+              <h2>Encouraging change for kids in Tonga</h2>
+              <p class="quote">34% lift in kids choosing a healthy option as their #1 choice</p>
+            </div>
+            <p class="summary">Developing positive attitudes towards healthy fresh eating habits.
+            </p>
+          </div>
+          <div class="service-img">
+            <div class="img">
+              <img src="./assets/index_osi.png" alt="Our Special Island app screens" />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/ellic.html">
-        <div class="project_title"><h1>ELLIC</h1></div>
-        <div class="marquee"><p>Experience Designer | UI|UX Design</p></div>
-      </a>
-      <div class="score">04</div>
-      <div class="hover-reveal" id="ELLIC">
-        <img class="hidden-img" src="img/_ellic/ellic_magpie_family.png" alt="Ellic character smiling cheekily with stars around">
-      </div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/osi.html">
-        <div class="project_title"><h1>Our Special Island</h1></div>
-        <div class="marquee"><p>Lead Designer | Graphic Design, UI Design, Game Artist</p></div>
-      </a>
-      <div class="score">05</div>
-      <div class="hover-reveal" id="OSI">
-        <img class="hidden-img" src="img/_osi/osi_header_coconuts.png" alt="Tongan healthy eating game app">
-      </div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/optifast.html">
-        <div class="project_title"><h1>Optifast</h1></div>
-        <div class="marquee"><p>Designer | Graphic Design, UI Design</p></div>
-      </a>
-      <div class="score">06</div>
-      <div class="hover-reveal" id="OPTIFAST">
-        <img class="hidden-img" src="img/_optifast/optifast_header_img.png" alt="Nestle mobile app">
-      </div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="/pages/infinitevoyage.html">
-        <div class="project_title"><h1>Infinite Voyage</h1></div>
-        <div class="marquee"><p>Designer | UX & UI Design</p></div>
-      </a>
-      <div class="score">07</div>
-      <div class="hover-reveal" id="IV">
-        <img class="hidden-img" src="img/_iv/IV_Header-removebg-preview.png" alt="Infinite Voyage — maths education game">
-      </div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="">
-        <div class="project_title"><h1>Carlton Respects</h1></div>
-        <div class="marquee"><p>Under construction. Check back soon!</p></div>
-      </a>
-      <div class="score">08</div>
-      <div class="hover-reveal" id="CARLTON">
-        <img class="hidden-img" src="img/_carlton/carlton_header.png" alt="Carlton Respects Program">
-      </div>
-    </div>
-  </div>
-  <div id="project">
-    <div class="container">
-      <a class="description" href="">
-        <div class="project_title"><h1>Bendigo Bank</h1></div>
-        <div class="marquee"><p>Under construction. Check back soon!</p></div>
-      </a>
-      <div class="score">09</div>
-      <div class="hover-reveal" id="BP">
-      </div>
-    </div>
-  </div>
-</section>
-  <!-- The cursor elements --> 
+    <!-- The cursor elements --> 
   <div class="cursor">
     <div class="circle"></div>
     <div class="circle"></div>
@@ -172,8 +96,13 @@
     <div class="circle"></div>
     <div class="circle"></div>
   </div>
-<script src ="/js/cursor.js"></script>
-<script src ="/js/cursor_hover.js"></script>
-<script type="module" src="/js/main.js"></script>
-</body>
+<script src ="./cursor.js"></script>
+<script src ="./cursor_hover.js"></script>
+<script type="module" src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.1/dist/lenis.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
