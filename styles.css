@@ -135,10 +135,7 @@ mark {
 
 a{
   color: var(--color-link);
-}
-
-h2.quote {
- font-size: 1.33em;
+  font-size: inherit;
 }
 
 .highlight{
