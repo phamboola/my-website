@@ -4,73 +4,62 @@ website style
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
-/* typography sizes */ 
-h1{font-size:2.441em; line-height:150%;font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;font-weight:700; letter-spacing:-0.025em;}
-h2{font-size:1.953em; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:600;}
-h3{font-size:1.563em; line-height:100%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:800;}
-h4{font-size:1.25em; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:400;}
-p{font-size:1rem; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-serif;font-weight:400;}
-
-/* color */ 
+/* styling */ 
 :root {
-    --background: #fcfcfc;
-    --color-text: #272727;
-    --color-p: #272727;
-    --color-sub:#a5a8e4;
-    --color-link:#787878;
-    --cursor-col: #ffff22;
-    --size-sm: 1rem;
-    --size-md: 1.5rem;
-    --size-lg: 2rem;
-    --size-xl: 4rem;
-    
-    font-size: 16px;
-  }
-
-/* spacers */ 
-.spacer-s {
-    height: 8px; /* Adjust the height to create the desired space */
-    width: 100%; /* Set the width to 100% to span the full width of the container */
-    background-color: transparent; /* You can set a background color if desired */
-}
-.spacer-m {
-    height: 24px; /* Adjust the height to create the desired space */
-    width: 100%; /* Set the width to 100% to span the full width of the container */
-    background-color: transparent; /* You can set a background color if desired */
-}
-.spacer-l {
-    height: 48px; /* Adjust the height to create the desired space */
-    width: 100%; /* Set the width to 100% to span the full width of the container */
-    background-color: transparent; /* You can set a background color if desired */
-}
-.spacer-xl {
-    height: 64px; /* Adjust the height to create the desired space */
-    width: 100%; /* Set the width to 100% to span the full width of the container */
-    background-color: transparent; /* You can set a background color if desired */
+  --background: #fcfcfc;
+  --color-text: #272727;
+  --color-p: #272727;
+  --color-sub:#a5a8e4;
+  --color-link:#4248b3;
+  --cursor-col: #ffff22;
+  --size-sm: 1rem;
+  --size-md: 1.5rem;
+  --size-lg: 2rem;
+  --size-xl: 4rem;
 }
 
-/* keyframe animations marquee */ 
-@-moz-keyframes marquee {
-  0%   { -moz-transform: translateX(100%); }
-  100% { -moz-transform: translateX(-100%); }
- }
- @-webkit-keyframes marquee {
-  0%   { -webkit-transform: translateX(100%); }
-  100% { -webkit-transform: translateX(-100%); }
- }
- @keyframes marquee {
-  0%   { 
-  -moz-transform: translateX(100%); /* Firefox bug fix */
-  -webkit-transform: translateX(100%); /* Firefox bug fix */
-  transform: translateX(100%); 		
-  }
-  100% { 
-  -moz-transform: translateX(-100%); /* Firefox bug fix */
-  -webkit-transform: translateX(-100%); /* Firefox bug fix */
-  transform: translateX(-100%); 
-  }
- }
+/* font and styles sizes */ 
+h1 {
+  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-weight:700; 
+  letter-spacing:-0.025em;
+  color: var(--color-p);
+  font-weight: 500;
+  font-size: 1.33em;
+}
+
+h2 {
+  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-weight:500; 
+  letter-spacing:-0.025em;
+  color: var(--color-p);
+  font-size: 1.2em;
+  line-height: 120%;
+}
+
+p {
+  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-weight:400; 
+  letter-spacing:-0.025em;
+  color: var(--color-p);
+  line-height: 150%;
+}
+
+.summary {
+  font-size: .8rem;
+  line-height: 125%;
+}
+
+.quote {
+  font-family: 'Lora', 'Times New Roman', Times, serif;
+  font-weight: 300;
+  color: var(--color-link);
+  line-height: 120%;
+  font-size: 1em;
+}
 
   /* cursor*/ 
   
@@ -87,761 +76,177 @@ p{font-size:1rem; line-height:150%;font-family:'Inter',Arial, Helvetica, sans-se
 
   .circle {
     position: fixed;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     border-radius: 20px;
     background-color: var(--cursor-col);
     }
 
-/* buttons */ 
-button.send_mail{
-font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-font-size: 1em;
-position: relative;
-border: 0.25rem none var(--color-text);
-border-radius: 1rem;
-padding: 1rem 2rem;
-letter-spacing: 0.025em;
-color: #fcfcfc;
-background-color: var(--color-text);
-width: fit-content;
-}
 
-button.send_mail:hover{
-  background-color: #5b5b5b;
-  color: var(--background);
-  text-decoration: none;
-  }
-
-button.send_mail:visited{
-    background-color: #f2f2f2;
-    color: var(--color-text);
-    text-decoration: none;
-    }
-
-/* defaults */ 
-
+/* configs here */ 
 * {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: calc( 14px + (24 - 18) * (100vw - 400px) / (800 - 400) );
 }
 
-html, body{
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  cursor: none;
-  background-color: var(--background);
+html,
+body {
   scroll-behavior: smooth;
-  background-image: url(/img/backgound.png);
+  background-image: url(./assets/background.png);
   background-size: 128px 256px;
   overflow:auto;
-
- }
-
- img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  cursor: none;
 }
-
-  /* nav bar*/
-  .navbar {
-    z-index: 2;
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .nav_description{
-    position:relative;
-    float:left;
-  }
-  
-  .tagline {
-    display: inline-flex;
-    width:13em;
-    padding: .75rem 1rem;
-    font-family: 'Inter',Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 0.75rem;
-    line-height: 150%;
-    text-align: left;
-    color: var(--color-text);
-  }
-  
-  .logo {
-    font-family:'Inter',Arial, Helvetica, sans-serif;
-    color: var(--color-text);
-    font-size: 0.75rem;
-    line-height: 150%;
-    font-weight: 400;
-    display: inline-block;
-    text-decoration:none;
-    padding: .75rem 1rem;
-    gap: 1rem;
-  }
-
-  nav {
-    position: relative;
-    float: right;
-    gap:1rem;
-    margin-right: 4rem;
-    }
-
-  a {
-    cursor:none;
-    text-decoration: none;
-    color: var(--background);
-  }
-
-  a:hover {
-    transition: all 0.3s ease-in-out;
-    color: var(--background);
-  }
-  
-  a.description{
-    color:var(--color-text);
-    width: fit-content;
-  }
-
-  a:hover +.description p{
-    display: block;
-  }
-
-  a.link {
-    cursor: default;
-}
-  
-  .hover-this {
-    transition: transform 0.3s ease-in-out;
-   }
- 
-  span {
-    display: inline-block;
-    padding: .75rem 1rem;
-    font-family:'Inter',Arial, Helvetica, sans-serif;
-    font-size: 0.8rem;
-    line-height: 150%;
-    font-weight: 400;
-    color: var(--color-link);
-    transition: transform 0.1s ease;
-  }
-
-  span:hover {
-    color:var(--color-text);
-  }
-
-  .hamburger {
-    display: none;
-    padding: 0.75rem 1rem;
-    color: var(--color-text);
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--color-text);
-}
-  
-/*landing section*/
-#folio_overflow {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width:86vh;
-  height:100vw;
-  z-index: 1;
-  -webkit-transform: rotate(-90deg) translateX(-100%) translateZ(0);
-  transform: rotate(-90deg) translateX(-100%) translateZ(0);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
-
-}  
-
-#project {
-  position:relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 0rem 1rem;
-  vertical-align: baseline;
-}
-
-.hover-reveal{
-  position: absolute;
-  z-index: 5;
-  overflow: hidden;
-  opacity: 0%;
-  transition: all .3s ease-out;
-  mix-blend-mode:hard-light
-}
-
-#VST{
-  -webkit-transform:translate(100px,800px) rotate(90deg) scale(1.0);
-  transform: translate(100px,800px) rotate(90deg) scale(1.0);
-  mix-blend-mode:normal;
-  z-index: 1;
-}
-
-#AS{
-  -webkit-transform:translate(250px, 670px) rotate(90deg) scale(1.2);
-  transform: translate(250px, 670px) rotate(90deg) scale(1.2);
-  mix-blend-mode:normal;
-  z-index: 1;
-}
-
-#SXSW{
-  -webkit-transform:translate(200px,270px) rotate(90deg) scale(1.8);
-  transform: translate(200px,270px) rotate(90deg) scale(1.8);
-  z-index: 1;
-  mix-blend-mode: multiply;
-}
-
-#OSI{
-  -webkit-transform:translate(250px,150px) rotate(90deg) scale(.9);
-  transform: translate(250px,150px) rotate(90deg) scale(.9);
-  z-index: 1;
-  mix-blend-mode: normal;
-}
-
-#OPTIFAST{
-  -webkit-transform:translate(140px,-280px) rotate(90deg) scale(1.1);
-  transform: translate(140px,-280px) rotate(90deg) scale(1.1);
-  z-index: 1;
-  mix-blend-mode: normal;
-}
-
-#BP{
-  -webkit-transform:translate(0px,250px) rotate(90deg) scale(1.1);
-  transform: translate(0px,250px) rotate(90deg) scale(1.1);
-}
-
-#ELLIC{
-  -webkit-transform:translate(220px,0px) rotate(90deg) scale(1.1);
-  transform: translate(220px,0px) rotate(90deg) scale(1.1);
-  mix-blend-mode:normal;
-}
-
-#ELLA{
-  -webkit-transform:translate(0px,250px) rotate(90deg) scale(1.1);
-  transform: translate(0px,250px) rotate(90deg) scale(1.1);
-}
-
-#CARLTON{
-  -webkit-transform:translate(95px,-320px) rotate(90deg) scale(2);
-  transform: translate(95px,-320px) rotate(90deg) scale(2);
-  position: absolute;
-  mix-blend-mode:normal;
-  z-index: 1;
-
-}
-
-#IV{
-  -webkit-transform:translate(140px, -220px) rotate(90deg) scale(2.2);
-  transform: translate(140px, -420px) rotate(90deg) scale(2.2);
-  mix-blend-mode:normal;
-  z-index: 1;
-}
-
-.hover-reveal img{
-  position: relative;
-  width:100%;
-  height:100%;
-  object-fit: contain;
-  transition: text-transform .3s ease-out;
-  transition:0s 180s;
-  mix-blend-mode: soft-light;
-}
-
 
 .container {
-    position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.description{
-  z-index: 2;
-  width: auto;
-  color: var(--color-text);
-}
-
-.project_title h1 {
-  line-height: 150%;
-  margin: 1rem 0rem 0rem 0rem;
-}
-
-.marquee {
-  opacity: 1;
-  height: 24px;	
-  width:100%;
-  overflow: hidden;
-  display: inline-block;
- }
-
- .marquee p{
-  font-size:.8em;
-  font-weight: 400;
-  color: #9e9e9e;
-  position: relative;
   width: 100%;
   height: 100%;
-  margin: 0;
-  text-align: left;
-  display: none;
-  animation: marquee 8s linear infinite;
-  }
-
-  a.description:hover ~ .hover-reveal{
-    opacity: 100%;
-  }
-
-  a.description:hover .marquee p{
-    display:flex;
-  }
-  
-
-
-.description>p{
-  font-size:.8em;
-  font-weight: 400;
-  color: #9e9e9e;
-  margin:auto;
 }
 
-.score {
-  top: 24px;
-  left: 480px;
-  z-index: -2;
-  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  font-size: 4.2rem;
-  display: flex;
-  position: absolute;
-  transform-origin: top left;
-  transform: rotate(90deg);
-  -webkit-text-stroke: 1px #a5a8e4;
-  text-stroke: 1px #5e63ce;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
-}
-
-/* Styles for the About Me */
-#about-me {
-  z-index: 1;
+img {
   width: 100%;
-  height:75vh;
-  display: grid;
-  align-items: flex-end;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  overflow: hidden;
+  height: 100%;
+  object-fit: cover;
 }
 
-.about-me-copy {
-  text-align: left;
-  font-weight: 400;
-  color: var(--color-text);
-  grid-column: col-start 2 / span 5;
-  grid-row: 2;
-  padding-right: var(--size-sm);
+.hero {
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.about-me-copy h3 {
-  line-height: 150%;
-  font-weight: 400;
-  letter-spacing:0em;
+.footer {
+  width: 100%;
+  height: 100vh;
 }
 
-.about-me-title{
-  color: var(--color-text);
-  grid-column: col-start 7 / span 5;
-  grid-row:2;
-  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.05em;
-  font-size: 7rem;
-  text-align: left;
-  align-content: flex-end;
-  -webkit-text-stroke: 1px var(--color-sub);
-  text-stroke: 1px var(--color-sub);
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+mark {
+  background-color: aqua;
 }
 
-.container img {
+a{
+  color: var(--color-link);
+}
+
+.highlight{
+  position:relative;
+}
+
+.highlight:before{
+  content:"";
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color:var(--color-link);
+  position: absolute;
+  border-right-color:transparent;
   width:100%;
-  max-height: 300px;
-  display:inline-block;
+  height:1em;
+  transform:rotate(2deg);
+  opacity:0.5;
+  border-radius:0.25em;
 }
 
-.container img:hover ~ .cursor{
-  transform: translate(-50%,-50%) scale(5);
-}
-
-.details{
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  gap:1rem;
-}
-
-/* styles for contact */ 
-#contact {
-  background-color: (--background);
-  display: grid;
-  grid-template-columns: repeat(12, [col-start] 1fr);
-  padding: 4rem 0rem;
+.highlight:after{
+  content:"";
+  left:0em;
+  top:0em;
+  border-width:2px;
+  border-style:solid;
+  border-color: var(--color-link);
+  border-left-color:transparent;
+  border-top-color:transparent;
+  position:absolute;
   width:100%;
-  padding-bottom: 10rem;
+  height:1em;
+  transform:rotate(-1deg);
+  opacity:0.5;
+  border-radius:0.25em;
 }
 
-.contact_intro {
-  grid-column: col-start 2 / span 5;
-  grid-row: 1;  
+.wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.953em;
+  gap: .5rem;
 }
 
-.contact_intro h1{
-  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-  font-size: 3.05em;
-  line-height: 125%;
-  padding-bottom: var(--size-sm);
-}
-
-.contact_details{
-  grid-column: col-start 7 / span 5;
-  grid-row: 1;  
-  display:flex;
-  flex-direction: column;
-  gap: var(--size-sm);
-  padding: 1rem 0rem;
-}
-
-.contact_details h2{
-  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-  padding-top: var(--size-md);
-  line-height: 125%;
-}
-
-.rate-wrapper{
-  grid-column: col-start 2 / span 5;
-  grid-row: 2;  
-  display: flex;
-  flex-direction: row;
-  gap:2rem;
-}
-.rate {
+.services {
+  padding: 8em 2em;
   display: flex;
   flex-direction: column;
 }
 
-.rate h1 {
-  font-family: 'Inter',Arial, Helvetica, sans-serif;
-  letter-spacing: 0em;
-  font-weight: 500;
-}
-
-.rate h2 {
-  font-family: 'Bayon',Arial, Helvetica, sans-serif;
-  letter-spacing: 0.025em;
-}
-
-/* folio templates */
-
-.sidebar {
-  width: 100vh;
-  height: max-content;
+.services-header {
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  transform: rotate(-90deg) translate(-86%, 0);
-  transform-origin: left top;
-  font-family: "Inter",Arial, Helvetica, sans-serif;
-  padding: 1rem 0rem;
-  
+  gap: 2em;
 }
 
-.sidebar > div:nth-child(1) {
+.services-header .col:nth-child(1) {
   flex: 2;
 }
 
-.sidebar > div:nth-child(2) {
-  flex: 2;
+.services-header .col:nth-child(2) {
+  flex: 5;
+  padding: 1em;
+}
+
+.service {
   display: flex;
-  gap: 6em;
+  gap: 2em;
+  height: 150px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-p#header {
-  font-family: 'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  letter-spacing: -.025em;
-  text-transform: uppercase;
-  font-size: 5rem;
-  line-height: 85%;
-  margin-bottom: 4rem;
-  color: #f1f1f1;
-  
-}
-
-.slider {
+.service-info {
+  flex: 2;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  
-}
-
-.slider-wrapper {
-  position: absolute;
-  top: 0;
-  width: fit-content;
-  padding: 0 600px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  
-}
-
-.slide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 600px;
-  height: 100%;
-  margin: 0;
+  justify-content: space-between;
+  padding: 1em 0em;
+  animation: fadeIn .5s ease-in-out .2s forwards;
 }
 
-.slide img {
-  width:100%;
+.service-img {
+  flex: 5;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+}
+
+.img {
+  width: 30%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* lenis scroll */
+html.lenis,
+html.lenis body {
   height: auto;
-  object-fit: contain;
 }
 
-.slide p {
-  margin: 0;
-  padding: 2rem 2rem 0rem 0rem;
-  font-size: 0.8rem;
-  line-height: 150%;
-  font-weight: 400;
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
 
-/* breakpoints*/ 
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
 
-@media only screen and (max-width: 768px){
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
 
-
-    .cursor {
-      display: none;
-    }
-
-    .circle {
-      display: none;
-    }
-
-    button.send_mail{
-      font-size: 1.2em;
-      line-height: 200%;
-      background-color: var(--color-text);
-      border: 0.25rem none var(--color-text);
-      color: var(--background);
-      padding: 1rem 2rem;
-      height: 84px;
-      width: -webkit-fill-available;
-      margin-bottom: 8em;
-      
-    }
-    
-    /* nav */
-    .navbar{
-      display: flex;
-      position: relative;
-      padding-bottom: var(--size-lg);
-    }
-
-
-    .nav_description{
-      display: flex;
-      flex-direction: column;
-    }
-
-    nav{
-      display: flex;
-      flex-direction: column;
-      margin-right:0rem;
-    }
-
-    .tagline {
-      font-size: 1em;
-      line-height: 150%;
-    }
-
-    span {
-      font-size: 1em;
-      line-height: 150%;
-    }
-
-
-    /* homepage content */
-
-    #folio_overflow {
-      -webkit-transform: rotate(0) translateX(0) translateZ(0);
-      transform: rotate(-) translateX(0) translateZ(0);
-      height: 100%;
-      width:auto;
-      overflow: auto;
-      display: block;
-
-    }  
-    
-    #project {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      padding-left: 1rem;
-      height:100px;
-    }
-
-    .project_title h1 {
-      width: max-content;
-      font-size:1.953em;
-    }
-
-    .score {
-      transform: rotate(0deg);
-      position:static;
-      font-size: 3.6em;
-    }
-
-    .marquee {
-      opacity: 100%;
-     }
-    
-     .marquee p{
-      font-size: 0.8em;
-      animation: none;
-      display: block;
-      }
-    
-    .gallery-divider{
-      display: flex;
-      flex-direction: column;
-      padding: 0rem 2rem;
-    }
-
-    .hover-reveal {
-      display: none;
-    }
-
-
-
-    /* project pages */
-
-    .sidebar {
-      display: none;
-    }
-
-    .slider {
-      height:auto;
-      overflow: auto;
-    }
-
-    .slider-wrapper {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      width: auto;
-      height: fit-content;
-      padding: 0;
-      gap:0;
-    }
-
-    .slide {
-      width: auto;
-      padding: 0em 1em 2em 1em;
-    }
-
-
-    .slide img {
-      height: 320px;
-      object-fit: cover;
-    }
-
-    .slide p {
-      font-size: 1em;
-      padding: 1em 0em;
-    }
-
-    /* About Me */
-
-    #about-me {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      height:fit-content;
-      padding-bottom: var(--size-lg);
-      }
-
-    .about-me-copy {
-      padding-bottom: var(--size-lg);
-      padding: var(--size-sm);
-    }
-
-    .about-me-title {
-      padding: var(--size-sm);
-    }
-
-    .rate-wrapper {
-      padding-bottom: var(--size-lg);
-    }
-
-    .contact_intro{
-      grid-column: col-start 1 / span 12;
-      padding: var(--size-sm);
-    }
-
-    .contact_details{
-      grid-column: col-start 1 / span 12;
-      grid-row: 2;
-      padding: 1rem 1rem;
-    }
-
-    .contact_details h2{
-      font-size:48px;
-      padding-top: 0em;
-      padding-bottom: var(--size-sm);
-    }
-    
-    
-    .contact_intro h1 {
-      line-height: 100%;
-    }
-
-    .contact_details p {
-      font-size:20px;
-      padding-bottom: var(--size-md);
-    }
-
-    #contact {
-      padding-bottom: var(--size-lg);
-      padding: 0rem;
-    }
-
-    .rate{
-      gap: 0;
-    }
-
-    }
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
