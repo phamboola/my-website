@@ -89,7 +89,7 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc(15px + 0.390625vw)
+  font-size: calc(16px + 0.390625vw)
 }
 
 html,
@@ -262,8 +262,12 @@ html.lenis body {
     display: none;
   }
 
+  .services-header {
+    display: none;
+  }
+
   * {
-    font-size: calc(16px + (32 - 18) * (100vw - 312px) / (800 - 400) );
+    font-size: calc(16px + 0.390625vw)
   }
 
   .hero {
@@ -273,6 +277,10 @@ html.lenis body {
   .service {
     display: flex;
     flex-direction:column;
+    gap: 0.5em;
+  }
+
+  .service-info {
     gap: 0.5em;
   }
 
