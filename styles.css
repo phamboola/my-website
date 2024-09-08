@@ -29,6 +29,7 @@ h1 {
   color: var(--color-p);
   font-weight: 500;
   font-size: 1.33em;
+  padding: 2em 0em;
 }
 
 h2 {
@@ -118,7 +119,7 @@ img {
   padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .footer {
