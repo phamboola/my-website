@@ -89,7 +89,7 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc(16px + (28 - 16) * (100vw - 400px) / (800 - 400) );
+  font-size: calc(16px + (24 - 16) * (100vw - 312px) / (800 - 400) );
 }
 
 html,
@@ -263,7 +263,21 @@ html.lenis body {
   }
 
   * {
-    font-size: calc(16px + (32 - 16) * (100vw - 400px) / (800 - 400) );
+    font-size: calc(16px + (32 - 18) * (100vw - 312px) / (800 - 400) );
+  }
+
+  .hero {
+    justify-content: flex-start;
+  }
+
+  .service {
+    display: flex;
+    flex-direction:column;
+    gap: 0.5em;
+  }
+
+  .service-img {
+    padding: 0em;
   }
 
 }
