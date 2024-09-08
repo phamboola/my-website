@@ -15,6 +15,7 @@ website style
   --color-sub:#a5a8e4;
   --color-link:#4248b3;
   --cursor-col: #ffff22;
+  --color-highlight:#fbdb94;
   --size-sm: 1rem;
   --size-md: 1.5rem;
   --size-lg: 2rem;
@@ -127,7 +128,7 @@ img {
 }
 
 mark {
-  background-color: aqua;
+  background-color: var(--color-highlight);
 }
 
 a{
