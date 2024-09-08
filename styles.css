@@ -51,6 +51,7 @@ p {
 .summary {
   font-size: .8rem;
   line-height: 125%;
+  color: var(--color-p);
 }
 
 .quote {
@@ -88,7 +89,7 @@ p {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc( 16px + (24 - 18) * (100vw - 400px) / (800 - 400) );
+  font-size: calc( 16px + (32 - 18) * (100vw - 400px) / (800 - 400) );
 }
 
 html,
@@ -249,4 +250,20 @@ html.lenis body {
 
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/*! Media queries */ 
+@media only screen and (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  * {
+    font-size: calc( 16px + (32 - 16) * (100vw - 400px) / (800 - 400) );
+  }
+
 }
