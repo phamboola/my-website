@@ -30,7 +30,7 @@ h1 {
   color: var(--color-p);
   font-weight: 500;
   font-size: 1.33em;
-  padding: 2em 0em;
+  padding: 1em 0em;
 }
 
 h2 {
@@ -249,12 +249,17 @@ html.lenis body {
 
   .hero {
     justify-content: flex-start;
+    padding: 2em 1em;
   }
 
   .service {
     display: flex;
     flex-direction:column;
     gap: 0.5em;
+  }
+
+  .services {
+    padding: 8em 1em;
   }
 
   .service-info {
