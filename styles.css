@@ -158,7 +158,7 @@ a{
   padding: 8em 2em;
   display: flex;
   flex-direction: column;
-  gap:3em;
+  gap:2em;
 }
 
 .services-header {
