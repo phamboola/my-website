@@ -139,20 +139,11 @@ a{
 }
 
 .highlight {
-  padding: 30px 0 8px;
-  position: relative;
-}
-
-.highlight:before{
-  content: "";
-  position: absolute;
-  left: 7%;
-  bottom: 16px;
-  width: 150px;
-  height: 14px;
+  background-image: linear-gradient(to right, #f9dd94 0%, #f9dd94 100%);
+  background-repeat: repeat-x; 
+  background-position: 0 100%; 
+  background-size: 100% 3px; 
   transform: skew(-12deg) translateX(-50%);
-  background: var(--color-sub);
-  z-index: -1;
 }
 
 .wrapper {
