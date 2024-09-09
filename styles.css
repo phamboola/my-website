@@ -142,7 +142,7 @@ a{
   background-image: linear-gradient(to right, var(--color-sub) 0%, var(--color-sub) 100%);
   background-repeat: repeat-x; 
   background-position: 0 100%; 
-  background-size: 100% 12px; 
+  background-size: 100% 3px; 
   transform: skew(-12deg) translateX(-50%);
   font-size: inherit;
 }
