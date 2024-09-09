@@ -30,8 +30,8 @@ h1 {
   letter-spacing:-0.025em;
   color: var(--color-p);
   font-weight: 500;
-  font-size: 1.33em;
-  padding: 1em 0em;
+  font-size: 1.5em;
+  padding: 0em 0em 1em 0em;
 }
 
 h2 {
@@ -241,7 +241,7 @@ html.lenis body {
   }
 
   .services-header {
-    display: none;
+    display: block;
   }
 
   * {
@@ -268,6 +268,10 @@ html.lenis body {
   }
 
   .service-img {
+    padding: 0em;
+  }
+
+  .services-header .col:nth-child(2) {
     padding: 0em;
   }
 
