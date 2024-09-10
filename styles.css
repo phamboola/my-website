@@ -64,6 +64,25 @@ p {
   font-size: 1.25em;
 }
 
+mark {
+  background-color: var(--color-highlight);
+  font-size: inherit;
+}
+
+a{
+  color: var(--color-link);
+  font-size: inherit;
+}
+
+.highlight {
+  background-image: linear-gradient(to right, var(--color-tri) 0%, var(--color-tri) 100%);
+  background-repeat: repeat-x; 
+  background-position: 0 100%; 
+  background-size: 100% 3px; 
+  transform: skew(-12deg) translateX(-50%);
+  font-size: inherit;
+}
+
   /* cursor*/ 
   
   .cursor {
@@ -128,30 +147,52 @@ img {
   height: 100vh;
 }
 
-mark {
-  background-color: var(--color-highlight);
-  font-size: inherit;
-}
-
-a{
-  color: var(--color-link);
-  font-size: inherit;
-}
-
-.highlight {
-  background-image: linear-gradient(to right, var(--color-tri) 0%, var(--color-tri) 100%);
-  background-repeat: repeat-x; 
-  background-position: 0 100%; 
-  background-size: 100% 3px; 
-  transform: skew(-12deg) translateX(-50%);
-  font-size: inherit;
-}
-
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
+.wrapper-row {
+  display: flex;
+  flex-direction: row;
+  gap: .75rem;
+}
+
+/* tiles */
+
+.tile {
+  display: flex;
+  align-items: flex-end;
+  gap: 2em;
+  width:6em;
+  padding: 1em;
+  border: 1px solid var(--color-sub);
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px #caccce;
+  background: linear-gradient(#fefefe, #eee);
+  transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -webkit-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -moz-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -o-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -ms-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+}
+
+.tile:hover {
+  background: linear-gradient(#fefefe,#fdfdfd);
+  box-shadow: 0px 0px 12px 0px #ddd;
+}
+
+.tile:focus {
+  background: #fefefe;
+  border: 1px solid var(--color-link);
+}
+
+.tile:active {
+  background: linear-gradient(#ededed,#ededed);
+}
+
+/* services */
 
 .services {
   padding: 8em 2em;
@@ -179,7 +220,29 @@ a{
   display: flex;
   gap: 2em;
   height: 150px;
-  border-top: 2px solid var(--color-sub);
+  border: 1px solid var(--color-sub);
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px #caccce;
+  background: linear-gradient(#fefefe, #eee);
+  transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -webkit-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -moz-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -o-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+  -ms-transition: linear-gradient .6s cubic-bezier(.77,0,.18,1);
+}
+
+.service:hover {
+  background: linear-gradient(#fefefe,#fdfdfd);
+  box-shadow: 0px 0px 12px 0px #ddd;
+}
+
+.service:focus {
+  background: #fefefe;
+  border: 1px solid var(--color-link);
+}
+
+.service:active {
+  background: linear-gradient(#ededed,#ededed);
 }
 
 .service-info {
@@ -189,7 +252,7 @@ a{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1em 0em;
+  padding: 1em 1em;
   animation: fadeIn .5s ease-in-out .2s forwards;
 }
 
@@ -271,6 +334,10 @@ html.lenis body {
 
   .services-header .col:nth-child(2) {
     padding: 0em;
+  }
+
+  .img {
+    border-radius: 0px 0px 20px 20px;
   }
 
 }
