@@ -435,6 +435,11 @@ html.lenis body {
 /*! Media queries */ 
 @media only screen and (max-width: 768px) {
 
+  :root {
+    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.12 + 0.390625vw);
+    --min-font-size:16px;
+  }
+
   .callout {
     margin: 1em 1em 1em 1em;
   }
