@@ -23,6 +23,7 @@ website style
   --size-xl: 4rem;
   --base-scale:1.12; 
   --min-font-size:15px;
+  --headline50:calc((var(--min-font-size)*var(--base-scale))*3 + 0.390625vw);
   --headline100:calc((var(--min-font-size)*var(--base-scale))*2 + 0.390625vw);
   --headline200:calc(var(--min-font-size)*var(--base-scale) + 0.390625vw);
   --body100:var(--min-font-size);
@@ -39,6 +40,16 @@ website style
 }
 
 /* font and styles sizes */ 
+h0 {
+  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-weight:700; 
+  letter-spacing:-0.025em;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: var(--headline50);
+  line-height: 1;
+}
+
 h1 {
   font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
   font-weight:700; 
@@ -243,6 +254,10 @@ img {
   display: flex;
   flex-direction: row;
   gap: .75em;
+}
+
+#tight {
+  gap: .5em;
 }
 
 /* tiles */
