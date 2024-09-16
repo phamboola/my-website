@@ -414,6 +414,12 @@ img {
   gap: 1.5em;
 }
 
+#stack-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
 .wrapper#middle-align{
   gap:.5em;
   flex: 1;
@@ -454,6 +460,10 @@ html.lenis body {
     --min-font-size:16px;
   }
 
+  * {
+    font-size: calc(16px + 0.390625vw)
+  }
+
   .callout {
     margin: 1em 1em 1em 1em;
   }
@@ -464,20 +474,16 @@ html.lenis body {
     gap: 2em;
   }
 
+  .wrapper {
+    gap:.75em;
+  }
+
   .cursor {
     display: none;
   }
 
   .circle {
     display: none;
-  }
-
-  .services-header {
-    display: block;
-  }
-
-  * {
-    font-size: calc(16px + 0.390625vw)
   }
 
   .hero {
@@ -494,6 +500,10 @@ html.lenis body {
 
   .services {
     padding: 2em 1em;
+  }
+
+  .services-header {
+    display: block;
   }
 
   .service-info {
