@@ -122,6 +122,19 @@ ol li{
   color: inherit;
 }
 
+ul li {
+  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  color: var(--text-primary);
+  font-size: var(--body200);
+  margin: .5em 1.25em;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.25;
+  letter-spacing:-0.025em;
+  color: inherit;
+  padding: 0em 0.5em;
+}
+
 
 .highlight {
   background-image: linear-gradient(to right, var(--color-tri) 0%, var(--color-tri) 100%);
