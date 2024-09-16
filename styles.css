@@ -437,7 +437,7 @@ html.lenis body {
 @media only screen and (max-width: 768px) {
 
   :root {
-    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.12 + 0.390625vw);
+    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.5 + 0.390625vw);
     --min-font-size:16px;
   }
 
@@ -470,7 +470,7 @@ html.lenis body {
   .hero {
     padding: 2em 1em;
     height: auto;
-    gap: 1em;
+    gap: .5em;
   }
 
   .service {
