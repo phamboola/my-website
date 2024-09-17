@@ -26,6 +26,7 @@ website style
   --headline50:calc((var(--min-font-size)*var(--base-scale))*3 + 0.390625vw);
   --headline100:calc((var(--min-font-size)*var(--base-scale))*2 + 0.390625vw);
   --headline200:calc(var(--min-font-size)*var(--base-scale) + 0.390625vw);
+  --headline300:calc(var(--min-font-size)*(var(--base-scale)/2) + 0.390625vw);
   --body100:var(--min-font-size);
   --body200:calc(var(--min-font-size)/var(--base-scale) + 0.390625vw);
   --body300:calc(var(--min-font-size)/(var(--base-scale)*2) + 0.390625vw);
@@ -81,6 +82,12 @@ p {
   font-size: var(--body200);
   line-height: 1.5;
   color: var(--text-primary);
+}
+
+.descriptor {
+  font-size: var(--body300);
+  line-height: 1.25;
+  color: var(--text-subtle);
 }
 
 .paragraph {
@@ -300,7 +307,7 @@ img {
 /* services */
 
 .services {
-  padding: 6em 2em;
+  padding: 4em 2em;
   display: flex;
   flex-direction: column;
   gap:2em;
@@ -412,6 +419,16 @@ img {
   gap: .75em 1em;
 }
 
+.info {
+  background-color: #eee;
+  padding: .75em 1em;
+  border-radius: .25em;
+  display: flex;
+  flex-direction: column;
+  gap:.5em;
+  margin: .25em 0em 1em 0em;
+}
+
 .color {
   border: 1.5px solid #c1c3c6;
   border-radius: 99px;
@@ -433,6 +450,16 @@ img {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
+}
+
+#stack-tight {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5em;
+}
+
+#stretch {
+ flex:1;
 }
 
 .wrapper#middle-align{
@@ -471,12 +498,19 @@ html.lenis body {
 @media only screen and (max-width: 768px) {
 
   :root {
-    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.5 + 0.390625vw);
     --min-font-size:16px;
+    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.5 + 0.390625vw);
+    --body300:calc((var(--min-font-size)*var(--base-scale))/1.5 + 0.390625vw);
   }
 
   * {
     font-size: calc(16px + 0.390625vw)
+  }
+
+  .descriptor {
+    font-size: var(--body300);
+    line-height: 1.25;
+    color: var(--text-subtle);
   }
 
   .callout {
@@ -491,6 +525,18 @@ html.lenis body {
 
   .wrapper {
     gap:.75em;
+  }
+
+  #stack-tight {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+  }
+
+  #stack-row {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
   }
 
   .cursor {
