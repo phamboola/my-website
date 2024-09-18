@@ -498,7 +498,7 @@ html.lenis body {
 @media screen and (min-width: 1440px) {
 
   .container {
-    padding: 0em 6em;
+    padding: 0em 8em;
   }
 
   .hero {
@@ -513,7 +513,7 @@ html.lenis body {
 
   :root {
     --min-font-size:16px;
-    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.5 + 0.390625vw);
+    --headline100:calc((var(--min-font-size)*var(--base-scale))*1.25 + 0.390625vw);
     --body300:calc((var(--min-font-size)*var(--base-scale))/1.5 + 0.390625vw);
   }
 
@@ -564,7 +564,7 @@ html.lenis body {
   .hero {
     padding: 2em 1em;
     height: auto;
-    gap: .5em;
+    gap: 2em;
   }
 
   .service {
