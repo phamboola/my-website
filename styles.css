@@ -307,7 +307,7 @@ img {
 /* services */
 
 .services {
-  padding: 4em 2em;
+  padding: 4em 2em 6em 2em;
   display: flex;
   flex-direction: column;
   gap:2em;
@@ -516,7 +516,7 @@ html.lenis body {
     --headline100:calc((var(--min-font-size)*var(--base-scale))*1.25 + 0.390625vw);
     --body300:calc((var(--min-font-size)*var(--base-scale))/1.5 + 0.390625vw);
   }
-  
+
 
   * {
     font-size: calc(16px + 0.390625vw)
@@ -575,7 +575,7 @@ html.lenis body {
   }
 
   .services {
-    padding: 2em 1em;
+    padding: 2em 1em 4em 1em;
   }
 
   .services-header {
