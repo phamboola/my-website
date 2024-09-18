@@ -75,7 +75,7 @@ p {
   font-weight:400; 
   letter-spacing:-0.025em;
   color: var(--text-primary);
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .summary {
