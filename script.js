@@ -135,7 +135,7 @@ else {
             scrub: true,
             onUpdate: (self) => {
               let progress = self.progress;
-              let newHeight = 150 + 350 * progress;
+              let newHeight = 200 + 150 * progress;
               gsap.to(service, {
                 height: newHeight + "px",
                 duration: 0.1,
