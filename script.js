@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
           scrub: true,
           onUpdate: (self) => {
             let progress = self.progress;
-            let newHeight = 150 + 300 * progress;
+            let newHeight = 200 + 300 * progress;
             gsap.to(service, {
               height: newHeight + "px",
               duration: 0.1,
@@ -70,3 +70,38 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(service);
   });
 });
+
+   if(screen.width < 768){
+    
+            ScrollTrigger.create({
+              trigger: service,
+              start: "bottom bottom",
+              end: "top top",
+              scrub: true,
+              onUpdate: (self) => {
+                let progress = self.progress;
+                let newWidth = 150 + 70 * progress;
+                gsap.to(imgContainer, {
+                  width: newWidth + "%",
+                  duration: 0.1,
+                  ease: "none",
+                });
+              },
+            });
+    
+            ScrollTrigger.create({
+              trigger: service,
+              start: "top bottom",
+              end: "top top",
+              scrub: true,
+              onUpdate: (self) => {
+                let progress = self.progress;
+                let newHeight = 100 + 300 * progress;
+                gsap.to(service, {
+                  height: newHeight + "px",
+                  duration: 0.1,
+                  ease: "none",
+                });
+              },
+            });
+          };
