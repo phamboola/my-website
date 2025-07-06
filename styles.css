@@ -238,12 +238,11 @@ img {
 
 .hero {
   width: 100vw;
-  height: 100vh;
   padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1em;
+  gap: 2em;
 }
 
 .footer {
@@ -506,6 +505,11 @@ html.lenis body {
     padding: 2em 0em;
     justify-content: space-around;
   }
+
+  .services {
+    display: flex;
+    padding: 2em 0em;
+    flex-direction:column;  }
 }
 
 
