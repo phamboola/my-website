@@ -539,7 +539,6 @@ html.lenis body {
   .container {
     display: flex;
     flex-direction: column;
-    gap: 2em;
   }
 
   .wrapper {
@@ -579,7 +578,7 @@ html.lenis body {
   }
 
   .services {
-    padding: 2em 1em 4em 1em;
+    padding: 0.5em 1em 4em 1em;
   }
 
   .services-header {
