@@ -362,7 +362,7 @@ img {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: .5rem;
   padding: 1em 1em;
   animation: fadeIn .5s ease-in-out .2s forwards;
 }
