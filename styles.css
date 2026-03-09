@@ -2,15 +2,15 @@
 website style
 ***/
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300;1,9..144,600&family=DM+Sans:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 
 /* styling */ 
 :root {
   --background: #fcfcfc;
-  --text-primary: #363636;
-  --text-subtle:#7f7f81;
+  --text-primary: #1B2B4B;
+  --text-subtle:#5C7AAA;
   --color-sub:#a5a8e4;
   --color-tri:#efadc8;
   --color-highlight:#fbdb94;
@@ -42,36 +42,38 @@ website style
 
 /* font and styles sizes */ 
 h0 {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight:700; 
+  font-family:'Fraunces',Arial, Helvetica, sans-serif;
   letter-spacing:-0.025em;
   color: var(--text-primary);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--headline50);
   line-height: 1;
+  letter-spacing: -0.02em;
 }
 
 h1 {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'Fraunces',Arial, Helvetica, sans-serif;
   font-weight:700; 
   letter-spacing:-0.025em;
   color: var(--text-primary);
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--headline100);
   line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
-  font-weight:500; 
+  font-family:'Fraunces',Arial, Helvetica, sans-serif;
+  font-weight:600; 
   letter-spacing:-0.025em;
   color: var(--text-primary);
   font-size: var(--headline200);
   line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 p {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'DM Sans',Arial, Helvetica, sans-serif;
   font-weight:400; 
   letter-spacing:-0.025em;
   color: var(--text-primary);
@@ -91,7 +93,7 @@ p {
 }
 
 .paragraph {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'DM Sans',Arial, Helvetica, sans-serif;
   font-size: var(--body100);
   line-height: 1.5;
   color: var(--text-primary);
@@ -111,7 +113,7 @@ code {
 }
 
 bold {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'DM Sans',Arial, Helvetica, sans-serif;
   font-weight: 500;
   letter-spacing:-0.025em;
   font-size: inherit;
@@ -129,7 +131,7 @@ a{
 }
 
 ol li{
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'DM Sans',Arial, Helvetica, sans-serif;
   color: var(--text-primary);
   font-size: var(--body200);
   margin: .5em 1.25em;
@@ -141,7 +143,7 @@ ol li{
 }
 
 ul li {
-  font-family:'Be Vietnam Pro',Arial, Helvetica, sans-serif;
+  font-family:'DM Sans',Arial, Helvetica, sans-serif;
   color: var(--text-primary);
   font-size: var(--body200);
   margin: .5em 1.25em;
